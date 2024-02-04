@@ -9,7 +9,14 @@ def test_simple_match():
     assert re.search(full_match('kek'), 'XXkekXX') is None
 
 
-def test_exception_message():
+@pytest.mark.parametrize(
+    'addictional_string', [
+        'XX',
+        'kek',
+        'ogogo',
+    ],
+)
+def test_exception_message(addictional_string):
     with pytest.raises(AssertionError, match='Regex pattern did not match.'):
         with pytest.raises(ValueError, match=full_match('kek')):
-            raise ValueError('XXkekXX')
+            raise ValueError(f'{addictional_string}kek{addictional_string}')
