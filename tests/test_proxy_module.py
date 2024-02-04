@@ -13,6 +13,7 @@ def test_simple_match():
 @pytest.mark.parametrize(
     'addictional_string', [
         'XX',
+        'XXX',
         'kek',
         'ogogo',
     ],
