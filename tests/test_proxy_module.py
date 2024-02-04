@@ -22,3 +22,9 @@ def test_exception_message(addictional_string):
     with pytest.raises(AssertionError, match='Regex pattern did not match.'):
         with pytest.raises(ValueError, match=full_match('kek')):
             raise ValueError(f'{addictional_string}kek{addictional_string}')
+
+
+def test_exception_message_like_in_readme():
+  with pytest.raises(AssertionError, match='Regex pattern did not match.'):
+    with pytest.raises(ValueError, match=full_match('Some message.')):  #
+      raise ValueError('XXSome message.XX')
