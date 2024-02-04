@@ -10,3 +10,26 @@
 [![PyPI version](https://badge.fury.io/py/full_match.svg)](https://badge.fury.io/py/full_match)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
+
+When catching exceptions in [Pytest](https://docs.pytest.org/en/latest/), sometimes you need to check messages. Since the user sends a pattern for searching, and not a message for exact matching, sometimes similar, but not identical messages pass through the filter. This micro-library contains a function that makes Pytest check exception messages accurately.
+
+Install it:
+
+```bash
+pip install full_match
+```
+
+And use:
+
+```python
+import pytest
+import full_match
+
+def test_something():
+  with pytest.raises(AssertionError, match='Regex pattern did not match.'):
+    with pytest.raises(ValueError, match=full_match('Some message.')):  #
+      raise ValueError('XXSome message.XX')
+```
+
+The message in the inner `with` block does not match the pattern exactly, so an `AssertionError` exception will occur in this example.
