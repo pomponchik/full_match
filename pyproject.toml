@@ -1,0 +1,39 @@
+[build-system]
+requires = ['setuptools==68.0.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'full_match'
+version = '0.0.12'
+authors = [
+  { name='Evgeniy Blinov', email='zheni-b@yandex.ru' },
+]
+description = 'One function that makes the string matchable'
+readme = 'README.md'
+requires-python = '>=3.7'
+classifiers = [
+  'Operating System :: MacOS :: MacOS X',
+  'Operating System :: Microsoft :: Windows',
+  'Operating System :: POSIX',
+  'Operating System :: POSIX :: Linux',
+  'Programming Language :: Python :: 3.7',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'License :: OSI Approved :: MIT License',
+  'Topic :: Software Development :: Libraries',
+  'Intended Audience :: Developers',
+]
+
+[tool.setuptools.package-data]
+"full_match" = ["py.typed"]
+
+[tool.mutmut]
+paths_to_mutate="full_match"
+runner="pytest"
+
+[project.urls]
+'Source' = 'https://github.com/pomponchik/full_match'
+'Tracker' = 'https://github.com/pomponchik/full_match/issues'
