@@ -7,6 +7,7 @@ import full_match
 
 def test_simple_match():
     assert re.search(full_match('kek'), 'XXkekXX') is None
+    assert re.search(full_match('kek'), '++kek++') is None
 
 
 @pytest.mark.parametrize(
