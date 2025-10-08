@@ -26,11 +26,11 @@ And use:
 
 ```python
 import pytest
-import full_match
+from full_match import match
 
 def test_something():
   with pytest.raises(AssertionError, match='Regex pattern did not match.'):
-    with pytest.raises(ValueError, match=full_match('Some message.')):
+    with pytest.raises(ValueError, match=match('Some message.')):
       raise ValueError('XXSome message.XX')
 ```
 
