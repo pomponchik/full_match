@@ -4,13 +4,13 @@ build-backend = 'setuptools.build_meta'
 
 [project]
 name = 'full_match'
-version = '0.0.2'
+version = '0.0.3'
 authors = [
   { name='Evgeniy Blinov', email='zheni-b@yandex.ru' },
 ]
 description = 'One function that makes the string matchable'
 readme = 'README.md'
-requires-python = '>=3.7'
+requires-python = '>=3.8'
 classifiers = [
   'Operating System :: MacOS :: MacOS X',
   'Operating System :: Microsoft :: Windows',
@@ -22,6 +22,7 @@ classifiers = [
   'Programming Language :: Python :: 3.11',
   'Programming Language :: Python :: 3.12',
   'Programming Language :: Python :: 3.13',
+  'Programming Language :: Python :: 3.14',
   'License :: OSI Approved :: MIT License',
   'Topic :: Software Development :: Libraries',
   'Topic :: Software Development :: Testing',
