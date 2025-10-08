@@ -33,3 +33,7 @@ jobs:
       - name: Run ruff
         shell: bash
         run: ruff check full_match
+
+      - name: Run ruff for tests
+        shell: bash
+        run: ruff check tests
