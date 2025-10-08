@@ -12,7 +12,7 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 
-When catching exceptions in [Pytest](https://docs.pytest.org/en/latest/), sometimes you need to check messages. Since the user sends a pattern for searching, and not a message for exact matching, sometimes similar, but not identical messages pass through the filter. This micro-library contains a function that makes Pytest check exception messages accurately.
+When catching exceptions in [`Pytest`](https://docs.pytest.org/en/latest/), sometimes you need to check messages. Since the user sends a pattern for searching, and not a message for exact matching, sometimes similar, but not identical messages pass through the filter. This micro-library contains a function that makes `Pytest` check exception messages accurately.
 
 It may also be useful to you if you use mutation testing tools such as [mutmut](https://github.com/boxed/mutmut).
 
