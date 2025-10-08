@@ -2,7 +2,7 @@
 
 [![Downloads](https://static.pepy.tech/badge/full_match/month)](https://pepy.tech/project/full_match)
 [![Downloads](https://static.pepy.tech/badge/full_match)](https://pepy.tech/project/full_match)
-[![codecov](https://codecov.io/gh/pomponchik/full_match/graph/badge.svg?token=a4c3RY9wo8)](https://codecov.io/gh/pomponchik/full_match)
+[![Coverage Status](https://coveralls.io/repos/github/pomponchik/full_match/badge.svg?branch=main)](https://coveralls.io/github/pomponchik/full_match?branch=main)
 [![Lines of code](https://sloc.xyz/github/pomponchik/full_match/?category=code)](https://github.com/boyter/scc/)
 [![Hits-of-Code](https://hitsofcode.com/github/pomponchik/full_match?branch=main)](https://hitsofcode.com/github/pomponchik/full_match/view?branch=main)
 [![Test-Package](https://github.com/pomponchik/full_match/actions/workflows/tests_and_coverage.yml/badge.svg)](https://github.com/pomponchik/full_match/actions/workflows/tests_and_coverage.yml)
